@@ -24,6 +24,6 @@ export const Default: Story = {
     handleChange: () => {
       console.log("handleChange run");
     },
-    icon: <CustomIcon element={<FaRegFaceLaughSquint />} />,
+    icon: <CustomIcon size="20px" element={<FaRegFaceLaughSquint />} />,
   },
 };

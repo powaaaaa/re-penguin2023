@@ -3,10 +3,11 @@ import { IconContext } from "react-icons";
 
 type Props = {
   element: ReactElement;
+  size: string;
 };
 
-export const CustomIcon: FC<Props> = ({ element }) => (
-  <IconContext.Provider value={{ size: "20px", color: "#3B3838" }}>
+export const CustomIcon: FC<Props> = ({ element, size }) => (
+  <IconContext.Provider value={{ size: size, color: "#3B3838" }}>
     {element}
   </IconContext.Provider>
 );
