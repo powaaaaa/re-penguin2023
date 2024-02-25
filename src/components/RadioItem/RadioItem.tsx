@@ -23,7 +23,7 @@ export const RadioItem: FC<Props> = ({
 }) => {
   return (
     <div className={className}>
-      <label htmlFor={value} className="flex items-center">
+      <label htmlFor={selectItem} className="flex items-center">
         <input
           type="radio"
           style={{ marginRight: "4px" }}
