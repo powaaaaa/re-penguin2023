@@ -7,15 +7,17 @@ type Props = {
   selectItem: string;
   /** 仮置き */
   defaultChecked: string;
+  name: string;
   icon: ReactElement;
   handleChange: () => void;
-  className: string;
+  className?: string;
 };
 
 export const RadioItem: FC<Props> = ({
   value,
   selectItem,
   defaultChecked,
+  name,
   icon,
   handleChange,
   //! ComponentPropsWithoutRef<'div'>でなぜかエラーが出た
@@ -28,14 +30,14 @@ export const RadioItem: FC<Props> = ({
           type="radio"
           style={{ marginRight: "4px" }}
           id={selectItem}
-          // name={selectName}
-          value={selectItem}
+          name={name}
+          value={value}
           // checked={}
-          defaultChecked={value === defaultChecked}
+          defaultChecked={selectItem === defaultChecked}
           onChange={handleChange}
         />
         {/* `className="pr-1"`が効かない */}
-        <span style={{ paddingRight: "4px" }}>{value}</span>
+        <span style={{ paddingRight: "4px" }}>{selectItem}</span>
         <span style={{ display: "flex", alignItems: "center" }}>{icon}</span>
       </label>
     </div>
