@@ -8,7 +8,7 @@ type Props = {
 export const Category: FC<Props> = ({ label, icon, ...props }) => {
   return (
     <div className={props.className}>
-      <label className="text-sm pb-3 flex justify-center">{label}</label>
+      <label className="text-sm pb-2 flex justify-center">{label}</label>
       <div className="flex justify-center">{icon}</div>
     </div>
   );
