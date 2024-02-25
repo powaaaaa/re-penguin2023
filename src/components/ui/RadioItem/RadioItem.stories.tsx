@@ -2,7 +2,7 @@ import { RadioItem } from "./RadioItem";
 import { FaRegFaceLaughSquint } from "react-icons/fa6";
 
 import type { Meta, StoryObj } from "@storybook/react";
-import { CustomIcon } from "../../util/CustomIcon";
+import { CustomIcon } from "../../../util/CustomIcon";
 
 const meta: Meta<typeof RadioItem> = {
   component: RadioItem,
