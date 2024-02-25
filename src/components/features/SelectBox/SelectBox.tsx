@@ -9,7 +9,7 @@ type Props = {
   handleChange: () => void;
 };
 
-export const CatSelect: FC<Props> = ({
+export const SelectBox: FC<Props> = ({
   catName,
   catArr,
   value,

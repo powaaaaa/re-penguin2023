@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { CatSelect } from "./CatSelect";
+import { SelectBox } from "./SelectBox";
 import { categoryList } from "../../../util/categoryList";
 
-const meta: Meta<typeof CatSelect> = {
-  component: CatSelect,
+const meta: Meta<typeof SelectBox> = {
+  component: SelectBox,
   parameters: {
     layout: "centered",
   },
@@ -12,7 +12,7 @@ const meta: Meta<typeof CatSelect> = {
 
 export default meta;
 
-type Story = StoryObj<typeof CatSelect>;
+type Story = StoryObj<typeof SelectBox>;
 
 export const Default: Story = {
   args: {
