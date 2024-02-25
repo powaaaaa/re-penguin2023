@@ -18,7 +18,7 @@ export const RadioItem: FC<Props> = ({
   defaultChecked,
   icon,
   handleChange,
-  //! COmponentPropsWithoutRef<'div'>でなぜかエラーが出た
+  //! ComponentPropsWithoutRef<'div'>でなぜかエラーが出た
   className,
 }) => {
   return (
