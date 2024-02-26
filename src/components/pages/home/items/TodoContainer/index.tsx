@@ -17,7 +17,7 @@ export const TodoContainer: FC<Props> = ({
     <div
       className={`flex justify-center px-9 py-16 h-full bg-[#D9EFEC] rounded-lg ${className}`}
     >
-      <div>
+      <div className="max-w-[374px] w-full">
         <p className="text-2xl font-semibold pb-14">Your Todo!!</p>
         <TodoList todos={todos} handleClick={handleDoneClick} />
       </div>
