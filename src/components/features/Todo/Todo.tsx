@@ -19,7 +19,12 @@ export const Todo: FC<Props> = ({ todo, handleClick }) => {
           cat={todo.category}
         />
       </div>
-      <Button variant="contained" size="small" onClick={handleClick}>
+      <Button
+        className="min-w-[46px]"
+        variant="contained"
+        size="small"
+        onClick={handleClick}
+      >
         完了
       </Button>
     </div>

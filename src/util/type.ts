@@ -17,3 +17,9 @@ export type TodoType = {
   motivation: string;
   category: string;
 };
+
+export type ImageMappingType = {
+  src: string;
+  min: number;
+  max: number;
+};

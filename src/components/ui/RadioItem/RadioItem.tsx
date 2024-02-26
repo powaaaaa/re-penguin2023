@@ -24,22 +24,23 @@ export const RadioItem: FC<Props> = ({
   className,
 }) => {
   return (
-    <div className={className}>
-      <label htmlFor={selectItem} className="flex items-center">
-        <input
-          type="radio"
-          style={{ marginRight: "4px" }}
-          id={selectItem}
-          name={name}
-          value={value}
-          // checked={}
-          defaultChecked={selectItem === defaultChecked}
-          onChange={handleChange}
-        />
-        {/* `className="pr-1"`が効かない */}
-        <span style={{ paddingRight: "4px" }}>{selectItem}</span>
-        <span style={{ display: "flex", alignItems: "center" }}>{icon}</span>
-      </label>
-    </div>
+    <label
+      htmlFor={selectItem}
+      className={`flex items-center min-w-[120px] ${className}`}
+    >
+      <input
+        type="radio"
+        style={{ marginRight: "4px" }}
+        id={selectItem}
+        name={name}
+        value={value}
+        // checked={}
+        defaultChecked={selectItem === defaultChecked}
+        onChange={handleChange}
+      />
+      {/* `className="pr-1"`が効かない */}
+      <span style={{ paddingRight: "4px" }}>{selectItem}</span>
+      <span style={{ display: "flex", alignItems: "center" }}>{icon}</span>
+    </label>
   );
 };

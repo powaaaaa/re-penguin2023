@@ -7,13 +7,18 @@ type Props = {
   size?: "large" | "medium" | "small";
 } & ComponentPropsWithoutRef<"button">;
 
-export const Button: FC<Props> = ({ children, variant, size, ...props }) => {
-  const style = cva(`rounded ${props.className}`, {
+export const Button: FC<Props> = ({
+  children,
+  variant,
+  size,
+  className,
+  ...props
+}) => {
+  const style = cva(`rounded hover:border-[#637491] ${className}`, {
     variants: {
       variant: {
-        contained:
-          "bg-[#8FD0D0] hover:bg-[#aaddcc] hover:border hover:border-[#637491]",
-        outlined: "border-[#aaddcc] hover:bg-[#bddded] hover:border-[#637491]",
+        contained: "bg-[#8FD0D0] hover:bg-[#aaddcc] hover:border",
+        outlined: "border-[#aaddcc] hover:bg-[#bddded]",
       },
       size: {
         large: "py-3 px-8 border-4 text-xl font-bold",
