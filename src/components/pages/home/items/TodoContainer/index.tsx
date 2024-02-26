@@ -5,7 +5,7 @@ import { TodoList } from "../../../../features/TodoList";
 type Props = {
   todos: TodoType[];
   className?: string;
-  handleDoneClick: (todo: TodoType) => void;
+  handleDoneClick: (index: number) => void;
 };
 
 export const TodoContainer: FC<Props> = ({

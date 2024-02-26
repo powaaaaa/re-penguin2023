@@ -6,10 +6,10 @@ import { TodoType } from "../../../util/type";
 type Props = {
   todo: TodoType;
   index: number;
-  handleClick: (todo: TodoType) => void;
+  handleClick: (index: number) => void;
 };
 
-export const Todo: FC<Props> = ({ todo, handleClick }) => {
+export const Todo: FC<Props> = ({ todo, index, handleClick }) => {
   return (
     <div className="flex max-w-[356px] max-h-[118px] px-5 py-3 bg-[#bfe7e5] rounded-lg">
       <div className="flex flex-col pr-8">
@@ -24,7 +24,7 @@ export const Todo: FC<Props> = ({ todo, handleClick }) => {
         className="min-w-[46px]"
         variant="contained"
         size="small"
-        onClick={() => handleClick(todo)}
+        onClick={() => handleClick(index)}
       >
         完了
       </Button>

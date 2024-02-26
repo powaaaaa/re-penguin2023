@@ -6,7 +6,7 @@ type IUseHomePage = {
   inputTodo: TodoType;
   handleContentChange: (e: ChangeEvent<HTMLInputElement>) => void;
   handleSubmitClick: () => void;
-  handleDoneClick: (todo: TodoType) => void;
+  handleDoneClick: (index: number) => void;
 };
 
 export const useHomePage = (): IUseHomePage => {
@@ -54,8 +54,11 @@ export const useHomePage = (): IUseHomePage => {
     });
   };
 
-  const handleDoneClick = (todo: TodoType) => {
-    setTodos(todos.filter((t: TodoType) => t.content !== todo.content));
+  const handleDoneClick = (index: number) => {
+    const newTodos = [...todos];
+    newTodos.splice(index, 1);
+    setTodos(newTodos);
+    // setTodos(todos.filter((t: TodoType) => t.content !== todo.content));
   };
 
   return {

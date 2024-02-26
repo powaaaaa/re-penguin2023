@@ -4,7 +4,7 @@ import { Todo } from "../Todo";
 
 type Props = {
   todos: TodoType[];
-  handleClick: (todo: TodoType) => void;
+  handleClick: (index: number) => void;
 };
 
 export const TodoList: FC<Props> = ({ todos, handleClick }) => {
@@ -15,7 +15,7 @@ export const TodoList: FC<Props> = ({ todos, handleClick }) => {
           key={index}
           index={index}
           todo={todo}
-          handleClick={() => handleClick(todo)}
+          handleClick={() => handleClick(index)}
         />
       ))}
     </div>
