@@ -27,6 +27,30 @@ const todos = [
     motivation: "そこそこ",
     category: "アイデア",
   },
+  {
+    content: "テキスト",
+    difficulty: "かんたん",
+    motivation: "そこそこ",
+    category: "アイデア",
+  },
+  {
+    content: "テキスト",
+    difficulty: "かんたん",
+    motivation: "そこそこ",
+    category: "アイデア",
+  },
+  {
+    content: "テキスト",
+    difficulty: "かんたん",
+    motivation: "そこそこ",
+    category: "アイデア",
+  },
+  {
+    content: "テキスト",
+    difficulty: "かんたん",
+    motivation: "そこそこ",
+    category: "アイデア",
+  },
 ];
 
 export const HomePage = () => {

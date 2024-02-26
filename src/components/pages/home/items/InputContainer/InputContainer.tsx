@@ -16,31 +16,35 @@ export const InputContainer: FC<Props> = ({
   handleClick,
 }) => {
   return (
-    <form className={`px-9 py-10 h-full bg-[#D9EFEC] rounded-lg ${className}`}>
-      <p className="pb-9 text-2xl font-bold">{userName}</p>
+    <form
+      className={`flex justify-center px-9 py-16 h-full bg-[#D9EFEC] rounded-lg ${className}`}
+    >
+      <div>
+        <p className="pb-14 text-2xl font-bold">{userName}</p>
 
-      <div className="flex flex-col pb-10">
-        <p className="pb-4">Todoを入力してね</p>
-        <input
-          type="text"
-          className="pl-2"
-          name="content"
-          //   value={inputTodo.content}
-          //   onChange={handleChange}
-          placeholder="がんばれ！"
-          autoFocus
-        />
-      </div>
+        <div className="flex flex-col pb-16">
+          <p className="pb-8">Todoを入力してね</p>
+          <input
+            type="text"
+            className="pl-2 max-w-80 rounded-md"
+            name="content"
+            //   value={inputTodo.content}
+            //   onChange={handleChange}
+            placeholder="がんばれ！"
+            autoFocus
+          />
+        </div>
 
-      <div className="pb-9">
-        <p className="pb-4">どんなTodo??</p>
-        <SelectList handleChange={handleChange} />
-      </div>
+        <div className="pb-14">
+          <p className="pb-8">どんなTodo??</p>
+          <SelectList handleChange={handleChange} />
+        </div>
 
-      <div className="flex justify-center">
-        <Button onClick={handleClick} variant="outlined" size="medium">
-          追加
-        </Button>
+        <div className="flex justify-center">
+          <Button onClick={handleClick} variant="outlined" size="medium">
+            追加
+          </Button>
+        </div>
       </div>
     </form>
   );

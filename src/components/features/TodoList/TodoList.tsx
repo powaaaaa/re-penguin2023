@@ -9,7 +9,7 @@ type Props = {
 
 export const TodoList: FC<Props> = ({ todos, handleClick }) => {
   return (
-    <div className="overflow-auto max-h-[625px] grid gap-y-3">
+    <div className="overflow-auto max-h-[808px] grid gap-y-5">
       {todos.map((todo, index) => (
         <Todo key={index} todo={todo} handleClick={handleClick} />
       ))}

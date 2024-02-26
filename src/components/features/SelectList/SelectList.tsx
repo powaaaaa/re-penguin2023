@@ -14,7 +14,7 @@ export const SelectList: FC<Props> = ({ handleChange }) => {
   ];
 
   return (
-    <div className="grid gap-y-3">
+    <div className="grid gap-y-5">
       {selects.map((select, index) => (
         <SelectBox
           key={index}
