@@ -21,7 +21,7 @@ export const HomePage = () => {
         handleContentChange={handleContentChange}
         handleSubmitClick={handleSubmitClick}
       />
-      <AsikaContainer className="basis-1/3" status={1} />
+      <AsikaContainer className="basis-1/3" status={todos.length} />
       <TodoContainer
         className="basis-1/3"
         todos={todos}
