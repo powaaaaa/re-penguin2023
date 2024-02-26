@@ -4,14 +4,19 @@ import { Todo } from "../Todo";
 
 type Props = {
   todos: TodoType[];
-  handleClick: () => void;
+  handleClick: (todo: TodoType) => void;
 };
 
 export const TodoList: FC<Props> = ({ todos, handleClick }) => {
   return (
     <div className="overflow-auto max-h-[808px] grid gap-y-5">
       {todos.map((todo, index) => (
-        <Todo key={index} todo={todo} handleClick={handleClick} />
+        <Todo
+          key={index}
+          index={index}
+          todo={todo}
+          handleClick={() => handleClick(todo)}
+        />
       ))}
     </div>
   );

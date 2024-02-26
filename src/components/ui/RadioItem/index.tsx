@@ -1,4 +1,4 @@
-import { FC, ReactElement } from "react";
+import { ChangeEvent, FC, ReactElement } from "react";
 
 type Props = {
   /** 入力値 */
@@ -9,7 +9,7 @@ type Props = {
   defaultChecked: string;
   name: string;
   icon: ReactElement;
-  handleChange: () => void;
+  handleChange: (e: ChangeEvent<HTMLInputElement>) => void;
   className?: string;
 };
 

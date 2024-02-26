@@ -1,19 +1,21 @@
-import { FC } from "react";
+import { ChangeEvent, FC } from "react";
 import { SelectList } from "../../../../features/SelectList";
 import { Button } from "../../../../ui/Button";
 
 type Props = {
   userName: string;
+  value: string;
   className?: string;
-  handleChange: () => void;
-  handleClick: () => void;
+  handleContentChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  handleSubmitClick: () => void;
 };
 
 export const InputContainer: FC<Props> = ({
   userName,
+  value,
   className,
-  handleChange,
-  handleClick,
+  handleContentChange,
+  handleSubmitClick,
 }) => {
   return (
     <form
@@ -28,8 +30,8 @@ export const InputContainer: FC<Props> = ({
             type="text"
             className="pl-2 max-w-80 rounded-md"
             name="content"
-            //   value={inputTodo.content}
-            //   onChange={handleChange}
+            value={value}
+            onChange={handleContentChange}
             placeholder="がんばれ！"
             autoFocus
           />
@@ -37,11 +39,11 @@ export const InputContainer: FC<Props> = ({
 
         <div className="pb-14">
           <p className="pb-8">どんなTodo??</p>
-          <SelectList handleChange={handleChange} />
+          <SelectList handleChange={handleContentChange} />
         </div>
 
         <div className="flex justify-center">
-          <Button onClick={handleClick} variant="outlined" size="medium">
+          <Button onClick={handleSubmitClick} variant="outlined" size="medium">
             追加
           </Button>
         </div>
