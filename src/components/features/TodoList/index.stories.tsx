@@ -1,23 +1,18 @@
-import { TodoContainer } from "./TodoContainer";
+import { TodoList } from ".";
 
 import type { Meta, StoryObj } from "@storybook/react";
 
-const meta: Meta<typeof TodoContainer> = {
-  component: TodoContainer,
+const meta: Meta<typeof TodoList> = {
+  component: TodoList,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
-  render: (args) => (
-    <div className="h-screen">
-      <TodoContainer {...args} />
-    </div>
-  ),
 };
 
 export default meta;
 
-type Story = StoryObj<typeof TodoContainer>;
+type Story = StoryObj<typeof TodoList>;
 
 export const Default: Story = {
   args: {

@@ -1,4 +1,4 @@
-import { RadioItem } from "./RadioItem";
+import { RadioItem } from ".";
 import { FaRegFaceLaughSquint } from "react-icons/fa6";
 
 import type { Meta, StoryObj } from "@storybook/react";

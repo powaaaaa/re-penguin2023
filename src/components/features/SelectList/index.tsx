@@ -1,9 +1,9 @@
-import { FC } from "react";
+import { ChangeEvent, FC } from "react";
 import { categoryList } from "../../../util/categoryList";
-import { SelectBox } from "../SelectBox/SelectBox";
+import { SelectBox } from "../SelectBox";
 
 type Props = {
-  handleChange: () => void;
+  handleChange: (e: ChangeEvent<HTMLInputElement>) => void;
 };
 
 export const SelectList: FC<Props> = ({ handleChange }) => {

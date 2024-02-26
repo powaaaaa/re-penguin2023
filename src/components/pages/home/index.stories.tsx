@@ -1,4 +1,4 @@
-import { HomePage } from "./homePage";
+import { HomePage } from ".";
 
 import type { Meta, StoryObj } from "@storybook/react";
 
@@ -8,11 +8,6 @@ const meta: Meta<typeof HomePage> = {
     layout: "centered",
   },
   tags: ["autodocs"],
-  //   render: (args) => (
-  //     <div className="h-screen">
-  //       <InputContainer {...args} />
-  //     </div>
-  //   ),
 };
 
 export default meta;

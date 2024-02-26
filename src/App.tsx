@@ -1,4 +1,4 @@
-import { HomePage } from "./components/pages/home/homePage";
+import { HomePage } from "./components/pages/home";
 
 function App() {
   // return <>Re: penguin hack 2023</>;

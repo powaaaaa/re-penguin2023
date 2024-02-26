@@ -1,12 +1,12 @@
-import { FC } from "react";
-import { RadioItem } from "../../ui/RadioItem/RadioItem";
+import { ChangeEvent, FC } from "react";
+import { RadioItem } from "../../ui/RadioItem";
 import { CategoryType } from "../../../util/type";
 
 type Props = {
   catName: string;
   catArr: CategoryType[];
   value: string;
-  handleChange: () => void;
+  handleChange: (e: ChangeEvent<HTMLInputElement>) => void;
 };
 
 export const SelectBox: FC<Props> = ({

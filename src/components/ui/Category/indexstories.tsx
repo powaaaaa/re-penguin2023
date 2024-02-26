@@ -1,4 +1,4 @@
-import { Category } from "./Category";
+import { Category } from ".";
 import { FaRegFaceLaughSquint } from "react-icons/fa6";
 
 import type { Meta, StoryObj } from "@storybook/react";

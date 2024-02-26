@@ -1,11 +1,12 @@
 import { FC } from "react";
-import { Button } from "../../ui/Button/Button";
+import { Button } from "../../ui/Button";
 import { Categories } from "./items/Categories";
 import { TodoType } from "../../../util/type";
 
 type Props = {
   todo: TodoType;
-  handleClick: () => void;
+  index: number;
+  handleClick: (todo: TodoType) => void;
 };
 
 export const Todo: FC<Props> = ({ todo, handleClick }) => {
@@ -23,7 +24,7 @@ export const Todo: FC<Props> = ({ todo, handleClick }) => {
         className="min-w-[46px]"
         variant="contained"
         size="small"
-        onClick={handleClick}
+        onClick={() => handleClick(todo)}
       >
         完了
       </Button>

@@ -1,4 +1,4 @@
-import { AsikaContainer } from "./AsikaContainer";
+import { AsikaContainer } from ".";
 
 import type { Meta, StoryObj } from "@storybook/react";
 
