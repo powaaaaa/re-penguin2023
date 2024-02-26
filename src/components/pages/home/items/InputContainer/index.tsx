@@ -1,6 +1,6 @@
 import { FC } from "react";
-import { SelectList } from "../../../../features/SelectList/SelectList";
-import { Button } from "../../../../ui/Button/Button";
+import { SelectList } from "../../../../features/SelectList";
+import { Button } from "../../../../ui/Button";
 
 type Props = {
   userName: string;

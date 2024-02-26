@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { ImageMappingType } from "../../../util/type";
-import { Image } from "../../ui/Image/Image";
+import { Image } from "../../ui/Image";
 
 type Props = {
   status: number;

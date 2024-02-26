@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { TodoType } from "../../../../../util/type";
-import { TodoList } from "../../../../features/TodoList/TodoList";
+import { TodoList } from "../../../../features/TodoList";
 
 type Props = {
   todos: TodoType[];

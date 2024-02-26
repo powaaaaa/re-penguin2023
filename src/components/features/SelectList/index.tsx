@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { categoryList } from "../../../util/categoryList";
-import { SelectBox } from "../SelectBox/SelectBox";
+import { SelectBox } from "../SelectBox";
 
 type Props = {
   handleChange: () => void;

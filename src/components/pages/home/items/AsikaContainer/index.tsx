@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Asika } from "../../../../features/Asika/Asika";
+import { Asika } from "../../../../features/Asika";
 
 type Props = {
   status: number;

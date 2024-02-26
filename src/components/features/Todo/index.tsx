@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Button } from "../../ui/Button/Button";
+import { Button } from "../../ui/Button";
 import { Categories } from "./items/Categories";
 import { TodoType } from "../../../util/type";
 

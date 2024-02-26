@@ -1,4 +1,4 @@
-import { Todo } from "./Todo";
+import { Todo } from ".";
 
 import type { Meta, StoryObj } from "@storybook/react";
 

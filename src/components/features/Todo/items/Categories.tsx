@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { CustomIcon } from "../../../../util/CustomIcon";
 import { categoryList } from "../../../../util/categoryList";
-import { Category } from "../../../ui/Category/Category";
+import { Category } from "../../../ui/Category";
 import { CategoryType } from "../../../../util/type";
 
 type Props = {

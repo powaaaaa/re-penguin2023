@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { SelectList } from "./SelectList";
+import { SelectList } from ".";
 
 const meta: Meta<typeof SelectList> = {
   component: SelectList,

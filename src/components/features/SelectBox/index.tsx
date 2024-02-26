@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { RadioItem } from "../../ui/RadioItem/RadioItem";
+import { RadioItem } from "../../ui/RadioItem";
 import { CategoryType } from "../../../util/type";
 
 type Props = {

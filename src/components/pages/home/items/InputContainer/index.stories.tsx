@@ -1,4 +1,4 @@
-import { InputContainer } from "./InputContainer";
+import { InputContainer } from ".";
 
 import type { Meta, StoryObj } from "@storybook/react";
 

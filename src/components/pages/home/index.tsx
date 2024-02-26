@@ -1,6 +1,6 @@
-import { AsikaContainer } from "./items/AsikaContainer/AsikaContainer";
-import { InputContainer } from "./items/InputContainer/InputContainer";
-import { TodoContainer } from "./items/TodoContainer/TodoContainer";
+import { AsikaContainer } from "./items/AsikaContainer";
+import { InputContainer } from "./items/InputContainer";
+import { TodoContainer } from "./items/TodoContainer";
 
 const todos = [
   {
