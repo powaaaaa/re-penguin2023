@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import { TodoType } from "../../../../util/type";
 
 type IUseHomePage = {
@@ -19,6 +19,11 @@ export const useHomePage = (): IUseHomePage => {
     category: "アイデア",
   });
   const [todos, setTodos] = useState<TodoType[]>(data);
+
+  useEffect(() => {
+    const json = JSON.stringify(todos);
+    localStorage.setItem("todos", json);
+  }, [todos]);
 
   const handleContentChange = (e: ChangeEvent<HTMLInputElement>) => {
     setInputTodo({
